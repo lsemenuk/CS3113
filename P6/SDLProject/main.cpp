@@ -59,6 +59,7 @@ void Initialize() {
     // Royalty free song from https://www.youtube.com/channel/UCri987O-6E0siy0dzSOgu5A
     theme_music = Mix_LoadMUS("theme_music.mp3");
     Mix_PlayMusic(theme_music, -1);
+    // Roalty free song from https://freesound.org/people/felixyadomi/sounds/456368/
     jump = Mix_LoadWAV("jump.wav");
     
     viewMatrix = glm::mat4(1.0f);
