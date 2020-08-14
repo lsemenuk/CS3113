@@ -167,7 +167,7 @@ void Update() {
     accumulator = deltaTime;
     
     viewMatrix = glm::mat4(1.0f);
-    if (currentScene->state.player->position.x > 0 && currentScene->state.player->position.x < 11) {
+    if (currentScene->state.player->position.x > -5 && currentScene->state.player->position.x < 11) {
         viewMatrix = glm::translate(viewMatrix, glm::vec3(-5.0f, -currentScene->state.player->position.y - 3, 0));
     } else if (currentScene->state.player->position.x > 11) {
         viewMatrix = glm::translate(viewMatrix, glm::vec3(-15, 3.75, 0));

@@ -197,7 +197,9 @@ void Level1::Update(float deltaTime, int *lives) {
     
     if (state.player->position.y < -42) {
         *lives -= 1;
-        state.player->lostLife = true;
+        state.player->position = glm::vec3(5, -37, 0);
+        state.player->jumpPower = 5;
+        state.enemies[4].isActive = true;
     }
     
     // Win condition
